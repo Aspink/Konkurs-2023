@@ -1,5 +1,7 @@
 public class ROT13 {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        String string = "To zdanie jest zakodowane.";
+        String encrypted = rot13(string);
+        System.out.println(encrypted);
     }
 }
