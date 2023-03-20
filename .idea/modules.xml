@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Konkurs-2023.iml" filepath="$PROJECT_DIR$/Konkurs-2023.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zadanie1_ROT13/Zadanie1_ROT13.iml" filepath="$PROJECT_DIR$/Zadanie1_ROT13/Zadanie1_ROT13.iml" />
+    </modules>
+  </component>
+</project>
