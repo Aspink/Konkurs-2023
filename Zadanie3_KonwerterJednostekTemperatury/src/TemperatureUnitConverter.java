@@ -1,6 +1,8 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 public class TemperatureUnitConverter {
     public static void main(String[] args) {
+        DecimalFormat df = new DecimalFormat("#.00");
         String again = "T";
         double celsius;
         double kelvin;
@@ -30,7 +32,7 @@ public class TemperatureUnitConverter {
                     kelvin = convertCtoK(temperature);
                     fahrenheit = convertCtoF(temperature);
             }
-            System.out.println("Temperatura: " + celsius +"°C,  " + fahrenheit + "°F,  " + kelvin + " K.");
+            System.out.println("Temperatura: " + df.format(celsius) +"°C,  " + df.format(fahrenheit) + "°F,  " + df.format(kelvin) + " K.");
             scanner.nextLine();
             System.out.print("Czy chcesz dokonać kolejnego przeliczenia? T (tak), dowolny inny (nie): ");
             again = scanner.nextLine().toUpperCase();
