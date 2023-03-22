@@ -2,6 +2,9 @@ import java.util.Scanner;
 public class TemperatureUnitConverter {
     public static void main(String[] args) {
         String again = "T";
+        double celsius;
+        double kelvin;
+        double fahrenheit;
         Scanner scanner = new Scanner(System.in);
         while(again.equals("T")) {
             String unit = "";
@@ -9,7 +12,26 @@ public class TemperatureUnitConverter {
                 System.out.print("W jakich jednostkach chcesz podać temperaturę? Wybierz C (celsius), K (Kelvin) lub F (Fahrenheit): ");
                 unit = scanner.nextLine().toUpperCase();
             }
-
+            System.out.print("Podaj temperaturę: ");
+            double temperature = scanner.nextDouble();
+            switch (unit) {
+                case "K":
+                    celsius = convertKtoC(temperature);
+                    kelvin = temperature;
+                    fahrenheit = convertKtoF(temperature);
+                    break;
+                case "F":
+                    celsius = convertFtoC(temperature);
+                    kelvin = convertFtoK(temperature);
+                    fahrenheit = temperature;
+                    break;
+                default:
+                    celsius = temperature;
+                    kelvin = convertCtoK(temperature);
+                    fahrenheit = convertCtoF(temperature);
+            }
+            System.out.println("Temperatura: " + celsius +"°C,  " + fahrenheit + "°F,  " + kelvin + " K.");
+            scanner.nextLine();
             System.out.print("Czy chcesz dokonać kolejnego przeliczenia? T (tak), dowolny inny (nie): ");
             again = scanner.nextLine().toUpperCase();
         }
