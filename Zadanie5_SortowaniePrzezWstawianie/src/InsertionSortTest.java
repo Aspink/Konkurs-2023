@@ -21,7 +21,7 @@ public class InsertionSortTest {
     private static void testSorter(int[] testSet) {
         System.out.print("Tablica nieposortowana: ");
         printTable(testSet);
-        int[] sorted = Sorter.bubbleSorting(testSet);
+        int[] sorted = InsertionSort.insertionSort(testSet);
         int[] comparisonSet = Arrays.stream(testSet)
                 .sorted()
                 .toArray();
@@ -29,7 +29,7 @@ public class InsertionSortTest {
         printTable(sorted);
         System.out.print("Tablica porównawcza:    ");
         printTable(comparisonSet);
-        if(isEqual(sorted, comparisonSet)) {
+        if(Arrays.equals(sorted, comparisonSet)) {
             System.out.println("\uD83D\uDC9A Test passed\n");
         }  else {
             System.out.println("\uD83D\uDC94 Test failed\n");
@@ -45,9 +45,5 @@ public class InsertionSortTest {
             System.out.print("  ");
         }
         System.out.println("\b\b}");
-    }
-
-    public static boolean isEqual (int[] table1, int[] table2) {
-        return Arrays.equals(table1, table2);
     }
 }
