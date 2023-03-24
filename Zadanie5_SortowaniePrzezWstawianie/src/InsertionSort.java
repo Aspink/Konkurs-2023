@@ -3,20 +3,15 @@ import java.util.Arrays;
 public class InsertionSort {
     public static int[] insertionSort(int[] unsorted) {
         int[] sorted = Arrays.copyOf(unsorted, unsorted.length);
-        int unsortedSize = sorted.length - 1;
-        boolean sorting = true;
-        int temp;
-        while(sorting) {
-            sorting = false;
-            for(int i = 0; i < unsortedSize; i++) {
-                if(sorted[i] > sorted[i+1]) {
-                    temp = sorted[i];
-                    sorted[i] = sorted[i+1];
-                    sorted[i+1] = temp;
-                    sorting = true;
-                }
+        int temp, j, i;
+        for(i = 1; i < sorted.length; i++) {
+            temp = sorted[i];
+            j = i - 1;
+            while(j >= 0 && sorted[j] > temp) {
+                sorted[j + 1] = sorted[j];
+                j--;
             }
-            unsortedSize--;
+            sorted[j + 1] = temp;
         }
         return sorted;
     }
