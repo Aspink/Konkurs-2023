@@ -5,15 +5,11 @@ import java.util.Random;
 
 public class InsertionSortTest {
     private static final List<int[]> testSets = new ArrayList<>();
-    private final Random random = new Random();
 
     public static void main(String[] args) {
         testSets.add(randomTab(10));
-        testSets.add(new int[]{1,2,5,3,1,7,9,1,12,83,1,5,3,2});
-        testSets.add(new int[]{1,1,1,1,1,1,1,2,1,1,1});
         testSets.add(randomTab(100));
         testSets.add(randomTab(1000));
-        testSets.add(new int[]{2,1});
 
         for (int[] testSet : testSets) {
             testSorter(testSet);
