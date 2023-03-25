@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
+
 public class SorterTester {
     private static final List<int[]> testSets = new ArrayList<>();
 
@@ -44,5 +46,14 @@ public class SorterTester {
             System.out.print("  ");
         }
         System.out.println("\b\b}");
+    }
+
+    public static int[] randomTab(int size) {
+        final Random random = new Random();
+        int[] tab = new int[size];
+        for(int i = 0; i < size; i++) {
+            tab[i] = random.nextInt(size);
+        }
+        return tab;
     }
 }
