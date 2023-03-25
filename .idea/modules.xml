@@ -5,6 +5,9 @@
       <module fileurl="file://$PROJECT_DIR$/Konkurs-2023.iml" filepath="$PROJECT_DIR$/Konkurs-2023.iml" />
       <module fileurl="file://$PROJECT_DIR$/Zadanie1_ROT13/Zadanie1_ROT13.iml" filepath="$PROJECT_DIR$/Zadanie1_ROT13/Zadanie1_ROT13.iml" />
       <module fileurl="file://$PROJECT_DIR$/Zadanie2_SzyfrCezara/Zadanie2_SzyfrCezara.iml" filepath="$PROJECT_DIR$/Zadanie2_SzyfrCezara/Zadanie2_SzyfrCezara.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zadanie3_KonwerterJednostekTemperatury/Zadanie3_KonwerterJednostekTemperatury.iml" filepath="$PROJECT_DIR$/Zadanie3_KonwerterJednostekTemperatury/Zadanie3_KonwerterJednostekTemperatury.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zadanie4_SortowanieBombelkowe/Zadanie4_SortowanieBombelkowe.iml" filepath="$PROJECT_DIR$/Zadanie4_SortowanieBombelkowe/Zadanie4_SortowanieBombelkowe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zadanie5_SortowaniePrzezWstawianie/Zadanie5_SortowaniePrzezWstawianie.iml" filepath="$PROJECT_DIR$/Zadanie5_SortowaniePrzezWstawianie/Zadanie5_SortowaniePrzezWstawianie.iml" />
     </modules>
   </component>
 </project>
