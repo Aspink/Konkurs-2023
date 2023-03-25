@@ -28,7 +28,7 @@ public class SorterTester {
         printTable(sorted);
         System.out.print("Tablica porównawcza:    ");
         printTable(comparisonSet);
-        if(isEqual(sorted, comparisonSet)) {
+        if(Arrays.equals(sorted, comparisonSet)) {
             System.out.println("\uD83D\uDC9A Test passed\n");
         }  else {
             System.out.println("\uD83D\uDC94 Test failed\n");
@@ -44,18 +44,5 @@ public class SorterTester {
             System.out.print("  ");
         }
         System.out.println("\b\b}");
-    }
-
-    public static boolean isEqual (int[] table1, int[] table2) {
-//        if(table1.length != table2.length) {
-//            return false;
-//        }
-//        for(int i = 0; i<table1.length; i++) {
-//            if(table1[i] != table2[i]) {
-//                return false;
-//            }
-//        }
-//        return true;
-        return Arrays.equals(table1, table2); //replaces commented code above
     }
 }
