@@ -1,5 +1,6 @@
 package Fibonacci;
 
+import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
@@ -29,7 +30,15 @@ public class Fibonacci {
         results.put(n, result);
         return result;
     }
-    public static BigInteger binet (int n) {
-        return BigInteger.valueOf(Math.round((Math.pow((1 + Math.sqrt(5)) / 2, n) - Math.pow(1 - (1 + Math.sqrt(5)) / 2, n)) / Math.sqrt(5)));
+    public static BigInteger binet (Integer n) {
+        double sqrt5 = Math.sqrt(5);
+        double phi = (1 + sqrt5) / 2;
+        double psi = (1 - sqrt5) / 2;
+        BigInteger phiPow = BigDecimal.valueOf(phi).pow(n).toBigInteger();
+        BigInteger psiPow = BigDecimal.valueOf(psi).pow(n).toBigInteger();
+        BigInteger numerator = phiPow.subtract(psiPow);
+        BigInteger denominator = BigInteger.valueOf((long) sqrt5);
+        BigInteger result = numerator.divide(denominator);
+        return result;
     }
 }
