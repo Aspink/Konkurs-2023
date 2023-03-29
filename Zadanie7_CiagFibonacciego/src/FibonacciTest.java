@@ -16,7 +16,7 @@ public class FibonacciTest {
             if(n > 10 && n <= 100) {
                 System.out.println(midFibonacci(n));
             }
-            if(n > 100 && n <= 10000) {
+            if(n > 100 && n <= 1000000) {
                 System.out.println(binet(n));
             }
             scanner.nextLine();
