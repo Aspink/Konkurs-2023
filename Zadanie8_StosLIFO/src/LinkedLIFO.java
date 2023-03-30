@@ -20,5 +20,13 @@ public class LinkedLIFO<T> {
             head = node;
         }
     }
+    public T pop() {
+        if (head == null) {
+            return null;
+        }
+        T data = head.data;
+        head = head.previous;
+        return data;
+    }
 
 }
