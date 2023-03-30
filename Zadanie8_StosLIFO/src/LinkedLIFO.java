@@ -11,5 +11,14 @@ public class LinkedLIFO<T> {
     public LinkedLIFO() {
         head = null;
     }
+    public void push(T data) {
+        Node<T> node = new Node<>(data);
+        if(head == null) {
+            head = node;
+        } else {
+            node.previous = head;
+            head = node;
+        }
+    }
 
 }
