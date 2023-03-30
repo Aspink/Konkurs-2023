@@ -28,5 +28,10 @@ public class LinkedLIFO<T> {
         head = head.previous;
         return data;
     }
-
+    public T peek() {
+        if (head == null) {
+            return null;
+        }
+        return head.data;
+    }
 }
