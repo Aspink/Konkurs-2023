@@ -34,4 +34,7 @@ public class LinkedLIFO<T> {
         }
         return head.data;
     }
+    public boolean isEmpty() {
+        return head == null;
+    }
 }
