@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/Zadanie5_SortowaniePrzezWstawianie/Zadanie5_SortowaniePrzezWstawianie.iml" filepath="$PROJECT_DIR$/Zadanie5_SortowaniePrzezWstawianie/Zadanie5_SortowaniePrzezWstawianie.iml" />
       <module fileurl="file://$PROJECT_DIR$/Zadanie6_FizzBuzz/Zadanie6_FizzBuzz.iml" filepath="$PROJECT_DIR$/Zadanie6_FizzBuzz/Zadanie6_FizzBuzz.iml" />
       <module fileurl="file://$PROJECT_DIR$/Zadanie7_CiagFibonacciego/Zadanie7_CiagFibonacciego.iml" filepath="$PROJECT_DIR$/Zadanie7_CiagFibonacciego/Zadanie7_CiagFibonacciego.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zadanie8_StosLIFO/Zadanie8_StosLIFO.iml" filepath="$PROJECT_DIR$/Zadanie8_StosLIFO/Zadanie8_StosLIFO.iml" />
     </modules>
   </component>
 </project>
