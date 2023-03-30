@@ -8,5 +8,8 @@ public class LinkedLIFO<T> {
             this.previous = null;
         }
     }
+    public LinkedLIFO() {
+        head = null;
+    }
 
 }
