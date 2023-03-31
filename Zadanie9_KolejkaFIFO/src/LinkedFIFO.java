@@ -1,6 +1,7 @@
 public class LinkedFIFO<T> {
     private Node<T> head;
     private Node<T> tail;
+    private int size;
     private static class Node<T> {
         private T data;
         private Node<T> next;
@@ -12,9 +13,11 @@ public class LinkedFIFO<T> {
     public LinkedFIFO() {
         tail = null;
         head = null;
+        size = 0;
     }
     public void add(T data) {
         Node<T> node = new Node<>(data);
+        size++;
         if(head == null) {
             head = node;
             tail = node;
@@ -29,6 +32,7 @@ public class LinkedFIFO<T> {
         }
         T data = head.data;
         head = head.next;
+        size--;
         return data;
     }
     public T peek() {
@@ -41,15 +45,6 @@ public class LinkedFIFO<T> {
         return head == null;
     }
     public int size() {
-        if(head == null) {
-            return 0;
-        }
-        int size = 1;
-        Node current = head;
-        while (current.previous != null) {
-            current = current.previous;
-            size++;
-        }
         return size;
     }
 }
