@@ -13,21 +13,22 @@ public class LinkedFIFO<T> {
         tail = null;
         head = null;
     }
-    public void push(T data) {
+    public void add(T data) {
         Node<T> node = new Node<>(data);
         if(head == null) {
             head = node;
+            tail = node;
         } else {
-            node.previous = head;
-            head = node;
+            tail.next = node;
+            tail = node;
         }
     }
-    public T pop() {
+    public T poll() {
         if (head == null) {
             return null;
         }
         T data = head.data;
-        head = head.previous;
+        head = head.next;
         return data;
     }
     public T peek() {
