@@ -20,10 +20,15 @@ public class LinkedLIFOtest {
         System.out.println("Ile miast jest w moim stosie? " + Cities.size() + "\t\tIle miast jest w stosie Javy? " + CitiesJ.size());
         System.out.println("Czy mój stos jest pusty? " + Cities.isEmpty() + "\t\tCzy stos Javy jest pusty? " + CitiesJ.isEmpty());
         System.out.println("Zabieramy ostatnie miasto. Jakie to miasto?");
-        System.out.println("Mój stos: " + Cities.pop() + "\t\tStos Javy: " + CitiesJ.pop());
+        System.out.println("Mój stos: " + Cities.pop() + "\t\t\t\t\tStos Javy: " + CitiesJ.pop());
         System.out.println("Jakie miasto jest teraz na szczycie stosu?");
-        System.out.println("Mój stos: " + Cities.peek() + "\t\tStos Javy: " + CitiesJ.peek());
+        System.out.println("Mój stos: " + Cities.peek() + "\t\t\t\t\t\tStos Javy: " + CitiesJ.peek());
         System.out.println("Ile miast jest w moim stosie? " + Cities.size() + "\t\tIle miast jest w stosie Javy? " + CitiesJ.size());
-
+        System.out.println("Zabieramy kolejne miasto. Jakie to miasto?");
+        System.out.println("Mój stos: " + Cities.pop() + "\t\t\t\t\t\tStos Javy: " + CitiesJ.pop());
+        System.out.println("Jakie miasto jest teraz na szczycie stosu?");
+        System.out.println("Mój stos: " + Cities.peek() + "\t\t\t\t\tStos Javy: " + CitiesJ.peek());
+        System.out.println("Ile miast jest w moim stosie? " + Cities.size() + "\t\tIle miast jest w stosie Javy? " + CitiesJ.size());
+        System.out.println("Czy mój stos jest pusty? " + Cities.isEmpty() + "\t\tCzy stos Javy jest pusty? " + CitiesJ.isEmpty());
     }
 }
