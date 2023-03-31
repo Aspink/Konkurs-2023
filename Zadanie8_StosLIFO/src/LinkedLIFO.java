@@ -37,4 +37,16 @@ public class LinkedLIFO<T> {
     public boolean isEmpty() {
         return head == null;
     }
+    public int size() {
+        if(head == null) {
+            return 0;
+        }
+        int size = 1;
+        Node current = head;
+        while (current.previous != null) {
+            current = current.previous;
+            size++;
+        }
+        return size;
+    }
 }
