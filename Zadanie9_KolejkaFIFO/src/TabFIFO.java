@@ -23,5 +23,7 @@ public class TabFIFO<T> {
     public boolean isEmpty() {
         return tabQueue[0] == null;
     }
-
+    public int size() {
+        return size;
+    }
 }
