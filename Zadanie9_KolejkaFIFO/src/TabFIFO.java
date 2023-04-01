@@ -20,6 +20,8 @@ public class TabFIFO<T> {
     public T peek() {
         return (T) tabQueue[0];
     }
-
+    public boolean isEmpty() {
+        return tabQueue[0] == null;
+    }
 
 }
