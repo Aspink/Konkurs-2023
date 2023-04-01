@@ -9,6 +9,14 @@ public class TabFIFO<T> {
             tabQueue[size++] = data;
         }
     }
+    public T poll() {
+        T element = (T) tabQueue[0];
+        for(int i = 0; i < size; i++) {
+            tabQueue[i] = tabQueue[i+ 1];
+        }
+        size--;
+        return element;
+    }
 
 
 
