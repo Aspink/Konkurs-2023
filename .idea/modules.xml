@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/Zadanie6_FizzBuzz/Zadanie6_FizzBuzz.iml" filepath="$PROJECT_DIR$/Zadanie6_FizzBuzz/Zadanie6_FizzBuzz.iml" />
       <module fileurl="file://$PROJECT_DIR$/Zadanie7_CiagFibonacciego/Zadanie7_CiagFibonacciego.iml" filepath="$PROJECT_DIR$/Zadanie7_CiagFibonacciego/Zadanie7_CiagFibonacciego.iml" />
       <module fileurl="file://$PROJECT_DIR$/Zadanie8_StosLIFO/Zadanie8_StosLIFO.iml" filepath="$PROJECT_DIR$/Zadanie8_StosLIFO/Zadanie8_StosLIFO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zadanie9_KolejkaFIFO/Zadanie9_KolejkaFIFO.iml" filepath="$PROJECT_DIR$/Zadanie9_KolejkaFIFO/Zadanie9_KolejkaFIFO.iml" />
     </modules>
   </component>
 </project>
