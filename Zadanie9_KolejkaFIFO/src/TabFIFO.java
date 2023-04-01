@@ -17,7 +17,9 @@ public class TabFIFO<T> {
         size--;
         return element;
     }
-
+    public T peek() {
+        return (T) tabQueue[0];
+    }
 
 
 }
