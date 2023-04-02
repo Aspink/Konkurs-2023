@@ -9,7 +9,7 @@ public class AsciiText {
                 "      SSSSS     TT     OOO         OO   RR         MM        MM       MM    II        TT            PPP         PP   LL\n" +
                 "         SSS    TT      OO        OOO   RR         MM        MM       MM    II        TT            PPP         PP   LL\n" +
                 "SSS      SSS    TT      OOO      OOO    RR         MM        MM       MM    II        TT       **   PPPP       PP    LL\n" +
-                "  SSSSSSSS       TTTT      OOOOOO       RR         MM        MM       MM    II        TT       **   PP  PPPPPPP     LL\n" +
+                "  SSSSSSSS       TTTT      OOOOOO       RR         MM        MM       MM    II        TT       **   PP  PPPPPPP      LL\n" +
                 "                                                                                                    PP\n" +
                 "                                                                                                    PP\n" +
                 "                                                                                                    PP\n"
